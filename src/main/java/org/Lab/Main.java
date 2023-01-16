@@ -29,6 +29,13 @@ public class Main {
         warr1.decreaseLives();
         System.out.println(warr1.getLives());
 
+        Player player1=new Player(10,10,3);
+        Player player2=new Player(10,5,1);
+        player2.attack(player1);
+        System.out.println(player1.getLives());
+        player2.attack(player1);
+        System.out.println(player1.getLives());
+
 
 
 

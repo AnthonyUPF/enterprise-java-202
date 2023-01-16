@@ -30,5 +30,15 @@ public class LaboratoryTest {
         assertEquals(4,player.getLives());
     };
 
+    @Test
+    public void TestMethodAttack(){
+        Player player1=new Player(10,10,3);
+        Player player2=new Player(10,5,1);
+        player2.attack(player1);
+        assertEquals(5,player1.getHealth());
+        player2.attack(player1);
+        assertEquals(10,player1.getHealth());
+    }
+
 
 }

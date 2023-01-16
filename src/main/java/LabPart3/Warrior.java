@@ -6,5 +6,9 @@ public class Warrior extends Player{
         super(health, strength, lives);
     }
 
+    public void restoreHealth(){
+        setHealth(getHealth()+1);
+    }
+
 
 }
